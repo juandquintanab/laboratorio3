@@ -1,0 +1,231 @@
+
+/**********************************************8*/
+/*CONFIGURACION*/
+/**********************************************8*/
+/*-------------------------------------------*/
+/*A PARTIR DE ACA TODO CAMBIA*/
+
+/*Seccion donde estan los form*/
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: var(--borde);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.185);    
+}
+
+.form1, .form2{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: var(--borde);
+    border-style: dotted;
+    border-color:var(--color-primario);   
+}
+
+.form1  legend{
+    color:var(--color-primario);
+    font-weight: bold;
+}
+.form2 legend{
+    color:var(--color-primario);
+    font-weight: bold;
+}
+
+.form1,.form2 label{
+    color: #000000;
+    font-weight: bold;
+    font-family: var(--familia-principal);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form1 input{
+    margin-left: 1rem;
+    font-family: var(--familia-principal);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius:var(--borde);
+    color: #555151;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+   
+}
+
+.form2 input{
+    margin-left: 1rem;
+    font-family: var(--familia-principal);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: var(--borde);
+    color: #555151;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+}
+
+/*opciones de genero*/
+.opciones {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+
+/*SECCION DE LOS USUARIOS (la tabla)*/
+.usuarios h3 {
+    color:var(--color-primario);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.usuarios table{
+    width: 100%; 
+    margin: 0 auto; 
+
+}
+
+.usuarios table tr:nth-child(even){
+    border-collapse: collapse;
+    margin: 10px 0;
+    table-layout: fixed;
+    background-color: #f2f2f2;  
+}
+
+.usuarios table tbody tr:hover {
+  background-color: #2a5e2a69;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+th {
+    padding: 10px; 
+    text-align: center; 
+    background:var(--color-primario);
+    color: white;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.usuarios img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+img {
+    transition: all 0.3s ease; 
+}
+
+.usuarios img:hover {
+    filter: brightness(70%); 
+    transform:  scale(1.20); 
+}
+
+/* =================================== */
+/* 🎯 AJUSTES RESPONSIVE: CONFIGURACIÓN */
+/* =================================== */
+
+/* 📱 Teléfonos y pantallas pequeñas */
+@media (max-width: 1000px) {
+  /* Formulario */
+  section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .form1, .form2 {
+    padding: 1rem;
+  }
+
+  .form1 input,
+  .form2 input,
+  select,
+  textarea {
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .opciones {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.opciones label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+  /* Botones */
+  .botones {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  
+
+  /* ✅ Estilos para hacer la tabla responsive */
+.usuarios {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.usuarios table {
+  width: 100%;
+  min-width: 600px; /* fuerza scroll en pantallas pequeñas */
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.usuarios th,
+.usuarios td {
+  padding: 0.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Opcional: para evitar desbordes y darle estética */
+.usuarios table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.usuarios table::-webkit-scrollbar-thumb {
+  background-color: var(--color-primario);
+  border-radius: 4px;
+}
+
+  .usuarios img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Footer */
+  .footer2-principal {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer2-principal p {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* Header */
+  .header-principal {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .header-principal h1 {
+    font-size: 1.8rem;
+  }
+}

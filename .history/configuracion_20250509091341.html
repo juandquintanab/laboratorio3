@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>KM42</title>
+        <link rel="stylesheet" href="css/configuracion.css">
+        <link rel="icon" href="logo2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <header id="Inicio" class="header-principal">
+            <h1>Kilometro 42</h1>
+            <p>Las Maratones mas grandes del mundo</p>
+        </header>
+
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="index.html">Ultimas Noticias</a></li>
+                <li><a href="#Configuracion">Configuracion de perfil</a></li>
+                <li><a href="#cambiar">Cambiar Clave</a></li>
+                <li><a href="#Usuarios">Usuarios registrados</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido-principal">
+            <section>
+                <form action="#" method="post">
+
+                    <fieldset id="Configuracion">
+                        <legend>Configuracion del Perfil</legend>
+                        
+                        <label for="archivo">Imagen del perfil:</label>
+                        <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg">
+                        
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha">
+
+                        <label>Género:</label>
+                        <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                        <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                        <label><input type="radio" name="genero" value="otro"> Otro</label>
+                        
+                        <label for="color">Color favorito:</label>
+                        <input type="color" id="color" name="color" value="#ff0000">  
+                    </fieldset>
+
+                    <fieldset id="cambiar">
+                        <legend>Cambiar Clave</legend>
+                        
+                        <label for="nombre">Nombre de usuario:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: juanDavid1907" required>
+                        
+                        <label for="password">Antigua contraseña:</label>
+                        <input type="password" id="password1" name="password1" minlength="8" required>
+
+                        <label for="password">Nueva contraseña:</label>
+                        <input type="password" id="password2" name="password2" minlength="8" required>  
+                    </fieldset>
+
+                    <div style="margin-top: 20px;">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>  
+
+                </form>   
+            </section>
+
+
+
+            <section id="Usuarios">
+                <h3>Usuarios registrados</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imagen de perfil</th>
+                            <th>Correo</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cedula</th>
+                            <th>Fecha de nacimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/ana.jpg" alt="Foto de perfil de Ana Jiménez" width="150"></td>
+                            <td>ana.jimenez@example.com</td>
+                            <td>Ana</td>
+                            <td>Jiménez</td>
+                            <td>25.123.456</td>
+                            <td>12/04/1990</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/eliud.jpg" alt="Foto de perfil de Eliud Kipchoge" width="150"></td>
+                            <td>eliud.kipchoge@hotmail.com</td>
+                            <td>Eliud</td>
+                            <td>Kipchoge</td>
+                            <td>18.654.321</td>
+                            <td>05/11/1984</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/luis.png" alt="Foto de perfil de Luis Brownlee" width="150"></td>
+                            <td>luis.brownlee@gmail.com</td>
+                            <td>Luis</td>
+                            <td>Brownlee</td>
+                            <td>20.987.654</td>
+                            <td>15/07/1991</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/miguelito.jpg" alt="Foto de perfil de Miguelito Kipsang" width="150"></td>
+                            <td>miguelito.kipsang@yahoo.com</td>
+                            <td>Miguelito</td>
+                            <td>Kipsang</td>
+                            <td>17.456.789</td>
+                            <td>22/03/1987</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/willy.jpg" alt="Foto de perfil de Willy Takana" width="150"></td>
+                            <td>willy.tanaka@hotmail.com</td>
+                            <td>Willy</td>
+                            <td>Tanaka</td>
+                            <td>23.321.987</td>
+                            <td>30/08/1995</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+
+        <footer class="footer-principal">
+            
+
+            <div class="audio">
+                <audio controls>
+                    <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>   
+            </div>   
+            
+            <div class="video">
+                <video width="320" height="240" controls>
+                    <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div> 
+
+            <dl>
+                <dt>API — Application Programming Interface (Interfaz de Programación de Aplicaciones)</dt>
+                <dd>Es una herramienta que permite que dos programas diferentes se comuniquen entre sí, como si hablaran el mismo idioma.</dd>
+                <dd>Funciona como un camarero digital: toma tu pedido (solicitud), lo lleva a la cocina (servidor) y te trae lo que pediste (respuesta), sin que tú veas todo lo que pasa detrás.</dd>
+            
+                <dt>SEO — Search Engine Optimization (Optimización para Motores de Búsqueda)</dt>
+                <dd>Es el proceso de ajustar tu sitio web para que los motores de búsqueda como Google lo entiendan mejor y lo muestren entre los primeros resultados.</dd>
+                <dd>En pocas palabras, es como hacer que tu página sea la respuesta perfecta que Google quiere mostrar.</dd>
+              </dl>
+
+            <p><i>Contacto:</i>juandquintanab@gmail.com </p>
+            <p><i>Telefono:</i> +58-4144578713</p>
+            
+        </footer>
+    </body>
+</html>        

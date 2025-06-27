@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>KM42</title>
+        <link rel="stylesheet" href="./configuracion.css">
+        <link rel="stylesheet" href="../../shared/css/styles.css">
+        <link rel="icon" href="logo2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+ 
+    <body>
+        <aside class="chat-flotante">
+            <button class="botonFlotante">¡Chat!</button>
+        </aside>
+       
+        <header id="Inicio" class="header-principal">
+            <h1>Kilometro 42</h1>
+            <p>Las Maratones mas grandes del mundo</p>
+        </header>
+
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="../../index.html#Inicio">Inicio</a></li>
+                <li><a href="../../index.html#Noticias">Noticias</a></li>
+                <li><a href="../../index.html#sobre">Blog</a></li>
+                <li><a href="../contacto/contacto.html#Inicio">Contacto</a></li>
+                <li><a href="#Inicio">Configuracion</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido-principal">
+            <div >
+                <form action="#" method="post">
+
+                    <fieldset id="Configuracion" class="form1">
+                        <legend>Configuracion del Perfil</legend>
+                        
+                        <label for="archivo">Imagen del perfil:</label>
+                        <input type="file" id="archivo" name="archivo" accept=".jpg" required>
+                        
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+                        <label>Género:</label>
+                        <div class="opciones">
+                            <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                            <label><input type="radio" name="genero" value="mujer" > Mujer</label>
+                            <label><input type="radio" name="genero" value="otro"required> Otro</label>
+                        </div>
+                        
+                        <label for="color">Color favorito:</label>
+                        <input type="color" id="color" name="color" value="#ff0000" required>  
+                    </fieldset>
+
+                    <fieldset id="cambiar" class="form2">
+                        <legend>Cambiar Clave</legend>
+                        
+                        <label for="nombre">Nombre de usuario:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: juanDavid1907" required>
+                        
+                        <label for="password1">Antigua contraseña:</label>
+                        <input type="password" id="password1" name="password1" minlength="8" required>
+
+                        <label for="password2">Nueva contraseña:</label>
+                        <input type="password" id="password2" name="password2" minlength="8" required>  
+                    </fieldset>
+
+                    <div class="botones" >
+                        <button class="boton1" type="submit">Enviar</button>
+                        <button class="boton2" type="reset">Limpiar</button>
+                    </div>
+
+                </form>   
+            </div>
+
+
+
+            <section id="Usuarios" class="usuarios">
+                <h2>Usuarios registrados</h2>
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Imagen de perfil</th>
+                            <th>Correo</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cedula</th>
+                            <th>Fecha de nacimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../../assets/img/ana.jpg" alt="Foto de perfil de Ana Jiménez" ></td>
+                            <td>ana.jimenez@example.com</td>
+                            <td>Ana</td>
+                            <td>Jiménez</td>
+                            <td>25.123.456</td>
+                            <td>12/04/1990</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../assets/img/eliud.jpg" alt="Foto de perfil de Eliud Kipchoge"></td>
+                            <td>eliud.kipchoge@hotmail.com</td>
+                            <td>Eliud</td>
+                            <td>Kipchoge</td>
+                            <td>18.654.321</td>
+                            <td>05/11/1984</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../assets/img/luis.png" alt="Foto de perfil de Luis Brownlee" ></td>
+                            <td>luis.brownlee@gmail.com</td>
+                            <td>Luis</td>
+                            <td>Brownlee</td>
+                            <td>20.987.654</td>
+                            <td>15/07/1991</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../assets/img/miguelito.jpg" alt="Foto de perfil de Miguelito Kipsang" ></td>
+                            <td>miguelito.kipsang@yahoo.com</td>
+                            <td>Miguelito</td>
+                            <td>Kipsang</td>
+                            <td>17.456.789</td>
+                            <td>22/03/1987</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../../assets/img/willy.jpg" alt="Foto de perfil de Willy Takana" ></td>
+                            <td>willy.tanaka@hotmail.com</td>
+                            <td>Willy</td>
+                            <td>Tanaka</td>
+                            <td>23.321.987</td>
+                            <td>30/08/1995</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+
+        <footer class="footer2-principal">
+            
+            <address>
+                <p><i>Contacto:</i> juandquintanab@gmail.com</p>
+                <p><i>Teléfono:</i> +58-4144578713</p>
+            </address>
+            
+        </footer>
+
+        <script src="./configuracion.js" defer></script>
+
+    </body>
+</html>        

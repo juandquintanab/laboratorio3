@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>KM42</title>
+        <link rel="stylesheet" href="css/contacto.css">
+        <link rel="icon" href="logo2.png">
+    </head>
+
+    <body>
+
+        <header id="Inicio" class="header-principal">
+            <h1>Kilometro 42</h1>
+            <p>Las Maratones mas grandes del mundo</p>
+        </header>
+
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="index.html">Ultimas Noticias</a></li>
+                <li><a href="#Contacto">Datos Personales</a></li>
+                <li><a href="configuracion.html">Configuracion</a></li>
+            </ul>
+        </nav>
+    
+        <main id="Contacto" class="contenido-principal">
+            <section>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                        
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                                
+                        <label for="tema">Tema del mensaje:</label>
+                        <select id="tema" name="tema">
+                            <option value="">Seleccione un tema</option>
+                            <option value="problemas">Problemas</option>
+                            <option value="duda">Duda</option>
+                            <option value="explicacion">Explicación</option>
+                            <option value="pago">Registrar pago</option>
+                        </select>
+                            
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+                    </fieldset>
+                            
+                    <div style="margin-top: 20px;">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>    
+
+
+        </main>
+
+        
+
+        <footer class="footer-principal">
+            
+            <div class="audio">
+                <audio controls>
+                    <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>   
+            </div>   
+            
+            <div class="video">
+                <video width="320" height="240" controls>
+                    <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div> 
+
+            <dl>
+                <dt>API — Application Programming Interface (Interfaz de Programación de Aplicaciones)</dt>
+                <dd>Es una herramienta que permite que dos programas diferentes se comuniquen entre sí, como si hablaran el mismo idioma.</dd>
+                <dd>Funciona como un camarero digital: toma tu pedido (solicitud), lo lleva a la cocina (servidor) y te trae lo que pediste (respuesta), sin que tú veas todo lo que pasa detrás.</dd>
+            
+                <dt>SEO — Search Engine Optimization (Optimización para Motores de Búsqueda)</dt>
+                <dd>Es el proceso de ajustar tu sitio web para que los motores de búsqueda como Google lo entiendan mejor y lo muestren entre los primeros resultados.</dd>
+                <dd>En pocas palabras, es como hacer que tu página sea la respuesta perfecta que Google quiere mostrar.</dd>
+            </dl>
+
+            <p><i>Contacto:</i>juandquintanab@gmail.com </p>
+            <p><i>Telefono:</i> +58-4144578713</p>
+            
+        </footer>
+
+    </body>
+
+</html>        

@@ -1,0 +1,234 @@
+/* Estilos generales de toda la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos generales de todo lo que esta en el body*/
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+}
+
+/* Header */
+.header-principal {
+    background: linear-gradient(135deg, #e3fc00, #3da133);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/*Titulo del header*/
+.header-principal h1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*Texto del header*/
+.header-principal p {
+    font-style: normal;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Barra de navegación */
+.barra-navegacion{
+    background-color: #007706;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.barra-navegacion ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.barra-navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.barra-navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal (TODO LO DEL MAIN)*/
+.contenido-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/*Donde estan las 2 noticias (lo general)*/
+.seccion-noticias {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.185);    
+}
+
+.contenido-principal h2{
+    font-family: 'Montserrat', sans-serif;
+    color:  rgb(30, 148, 0);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #44aa00;
+}
+
+/*TODO LO DE LA NOTICA 1*/
+.noticia1 {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.noticia1 h3{
+    color:  rgb(30, 148, 0);
+    margin-bottom: 1rem;
+}
+
+.noticia1  h4 {
+    color:  rgb(20, 102, 0);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.noticia1 p{
+    font-style: normal;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.noticia1 ol{
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: decimal;
+}
+
+.noticia1 strong{
+    color:  rgb(0, 0, 0);
+}
+
+.noticia1 li{
+    color:  rgb(20, 102, 0);
+}
+
+.foto-noticia1{
+    margin-left: 5rem;
+    justify-content: center;
+    border-radius: 6px;
+} 
+
+.foto-noticia1 figcaption{
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+}
+
+/*TO DO LO DE LA NOTICIA 2*/
+.noticia2 {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+h3{
+    color:  rgb(30, 148, 0);
+    margin-bottom: 1rem;
+}
+
+strong{
+    color:  rgb(30, 148, 0);
+}
+
+i{
+    text-decoration: underline;
+}
+
+.foto-noticia2{
+    margin-left: 5rem;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.videoyt-noticia2{
+    margin-left: 5rem;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+/*ASIDE - SOBRE MI*/
+
+.info-perso{
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.185);  
+    text-align: justify; 
+
+}
+
+.info-perso h3{
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.foto-sobremi{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.info-perso article{
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.footer-principal{
+    background-color: #192519;
+    color: white;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-principal dl{
+    list-style-position: inside;
+    text-align: left;
+}
+
+.footer-principal dt{
+    color: rgb(34, 133, 25);
+    font-weight: 700;
+}
+
+.footer-principal dd{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.footer-principal p{
+    margin-top: 1rem;
+    text-align: center;
+}

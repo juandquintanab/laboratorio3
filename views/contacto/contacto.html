@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>KM42</title>
+        <link rel="stylesheet" href="contacto.css">
+        <link rel="stylesheet" href="../../shared/css/styles.css">
+        <link rel="icon" href="logo2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <header id="Inicio" class="header-principal">
+            <h1>Kilometro 42</h1>
+            <p>Las Maratones mas grandes del mundo</p>
+        </header>
+
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="../../index.html#Inicio">Inicio</a></li>
+                <li><a href="../../index.html#Noticias">Noticias</a></li>
+                <li><a href="../../index.html#sobre">Blog</a></li>
+                <li><a href="#Inicio">Contacto</a></li>
+                <li><a href="../configuracion/configuracion.html#Inicio">Configuracion</a></li>
+            </ul>
+        </nav>
+    
+        <main id="Contacto" class="contenido-principal">
+            <section class="seccion-form">
+                <h2>Formulario de contacto</h2>
+                <form action="#" method="post">
+                    <fieldset class="form">
+                        
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                        
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                                
+                        <label for="tema">Tema del mensaje:</label>
+                        <select id="tema" name="tema" required>
+                            <option value="">Seleccione un tema</option>
+                            <option value="problemas">Problemas</option>
+                            <option value="duda">Duda</option>
+                            <option value="explicacion">Explicación</option>
+                            <option value="pago">Registrar pago</option>
+                        </select>
+                            
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+                    </fieldset>
+                            
+                    <div class="botones" >
+                        <button class="boton1" type="submit">Enviar</button>
+                        <button class="boton2" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>    
+
+
+        </main>
+
+        
+
+        <footer class="footer2-principal">  
+            <address>
+                <p><i>Contacto:</i> juandquintanab@gmail.com</p>
+                <p><i>Teléfono:</i> +58-4144578713</p>
+            </address>
+        </footer>
+
+         <aside class="chat-flotante">
+            <button class="botonFlotante">¡Chat!</button>
+        </aside>
+       <script src="./contacto.js" defer></script>
+    </body>
+
+</html>        
