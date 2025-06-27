@@ -68,11 +68,21 @@ section {
 
 /*opciones de genero*/
 .opciones {
-    display: flex;
-    justify-content: left;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.opciones label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  margin: 0;
+  white-space: nowrap;
+}
 /*SECCION DE LOS USUARIOS (la tabla)*/
 .usuarios h3 {
     color:var(--color-primario);
