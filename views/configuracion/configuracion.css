@@ -17,7 +17,12 @@ section {
     border-color:var(--color-primario);   
 }
 
-.form1,.form2  legend{
+.form1  legend{
+    color:var(--color-primario);
+    font-weight: bold;
+}
+
+.form2  legend{
     color:var(--color-primario);
     font-weight: bold;
 }
@@ -30,7 +35,20 @@ section {
     font-weight: bold;
 }
 
-.form1,.form2 input{
+
+.form1 input{
+    margin-left: 1rem;
+    font-family: var(--familia-principal);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius:var(--borde);
+    color: #555151;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+   
+}
+.form2 input{
     margin-left: 1rem;
     font-family: var(--familia-principal);
     font-size: 1rem;
@@ -61,6 +79,10 @@ section {
 }
 
 /*SECCION DE LOS USUARIOS*/
+
+.usuarios {
+  margin-top: 2rem;
+}
 .usuarios h3 {
     color:var(--color-primario);
     margin-bottom: 1rem;
