@@ -4,7 +4,7 @@ Este archivo explica la organización interna del laboratorio, el cual contiene 
 
 ---
 # Estructura de los archivos del laboratorio
-
+```
 /assets
 │ ├── docs/
 │ │ └── README.md # Explicacion de la estructura de las carpetas
@@ -27,6 +27,7 @@ Este archivo explica la organización interna del laboratorio, el cual contiene 
 |
 ├── index.html # Página principal del sitio (seccion de noticias)
 └── README.md # Explicacion general del proyecto
+```
 
 ---
 
