@@ -3,6 +3,7 @@
   --borde: 10px;
   --familia-principal:'Verdana','sans-serif';
 }
+
 /*........................*/
 /* Estilos generales de toda la pagina */
 * {
@@ -13,6 +14,7 @@
 
 /*........................*/
 /*Estilos generales de todo lo que esta en el body*/
+
 body {
     font-family: var(--familia-principal);
     line-height: 1.6;
@@ -101,14 +103,14 @@ img {
 /*........................*/
 /* BARRA DE NAVEGACION */
 .barra-navegacion{
-    background-color:var(--color-primario);
-    padding: 1rem;
+    background-color:var(--color-primario) ;
     margin-bottom: 2rem;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 10000;
+    padding: 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .barra-navegacion ul {
     display: flex;
@@ -122,7 +124,7 @@ img {
 }
 
 .barra-navegacion ul::-webkit-scrollbar {
-    display: none; /* Oculta la barra de scroll en navegadores WebKit */
+    display: none; 
 }
 
 .barra-navegacion a {
@@ -148,16 +150,13 @@ img {
 }
 
 
-/**********************************************8*/
-/*INDEX*/
-/**********************************************8*/
 .contenedor-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-/* Ajustes de tamaño */
+
 .seccion-noticias {
     flex: 2;
     min-width: 60%;
@@ -370,8 +369,6 @@ i{
     text-align: center;
 }
 
-
-
 .footer-principal section{
     background-color: #192519;
     padding-block: 0.5rem;
@@ -442,12 +439,6 @@ i{
 }
 
 
-
-/*==============================*/
-/* MEDIA QUERIES RESPONSIVE */
-/*==============================*/
-
-/* 📱 Teléfonos (hasta 600px) */
 @media (max-width: 600px) {
   
   .header-principal {
@@ -478,7 +469,6 @@ i{
   }
 }
 
-/* 📲 Tablets (601px a 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   
   .contenedor-flex {
@@ -497,7 +487,6 @@ i{
   }
 }
 
-/* 💻 Escritorio (más de 1024px) */
 @media (min-width: 1025px) {
   .contenedor-flex {
     flex-direction: row;
@@ -517,11 +506,6 @@ i{
   flex: 0 0 auto; /* evita que se encojan */
 }
 
-
-/*NUEVOOOO*/
-/* ================================== */
-/* ✅ Ajustes globales para móviles  */
-/* ================================== */
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -548,7 +532,6 @@ body {
   padding: 1rem;
 }
 
-/* ✅ Corrige layout flexible de columnas en móviles */
 @media (max-width: 768px) {
   .contenedor-flex {
     flex-direction: column;

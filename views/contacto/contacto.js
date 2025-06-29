@@ -7,12 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   formulario.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Evita recarga
+    event.preventDefault(); 
 
     const formData = new FormData(formulario);
     const datos = {};
 
-    // Convertimos FormData a objeto
     formData.forEach((value, key) => {
       datos[key] = value;
     });
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const resultado = await respuesta.json();
 
-      // ✅ Guardar en historialContacto
       const historial = JSON.parse(localStorage.getItem("historialContacto")) || [];
       historial.push(resultado);
       localStorage.setItem("historialContacto", JSON.stringify(historial));

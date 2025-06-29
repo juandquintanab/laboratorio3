@@ -7,14 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   formulario.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Evita que se recargue la página
+    event.preventDefault(); 
 
     const formData = new FormData(formulario);
     const datos = {};
 
-    // Convertimos los datos en un objeto JSON (excluye archivos)
+    
     formData.forEach((value, key) => {
-      // Si ya existe la clave (como en los radio buttons), agrégalo como array
       if (datos[key]) {
         if (!Array.isArray(datos[key])) {
           datos[key] = [datos[key]];
@@ -38,14 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const resultado = await respuesta.json();
 
-     // Obtener el historial previo, o inicializar como arreglo vacío
-    const historial = JSON.parse(localStorage.getItem("historialConfiguracion")) || [];
-
-    // Agregar el nuevo resultado
-    historial.push(resultado);
-
-    // Guardar el historial actualizado
-    localStorage.setItem("historialConfiguracion", JSON.stringify(historial));
+     
+      const historial = JSON.parse(localStorage.getItem("historialConfiguracion")) || [];
+      historial.push(resultado);
+      localStorage.setItem("historialConfiguracion", JSON.stringify(historial));
 
       alert("Formulario enviado y datos guardados correctamente.");
       formulario.reset();
